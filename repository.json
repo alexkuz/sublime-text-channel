@@ -1,0 +1,42 @@
+{
+    "schema_version": "3.0.0",
+    "packages": [
+        {
+            "name": "Bun viewer",
+            "details": "https://github.com/alexkuz/sublime-bun",
+            "releases": [
+				{
+					"sublime_text": "*",
+					"tags": true,
+                    "dependencies": ["dprint"]
+				}
+			]
+        },
+        {
+            "name": "Yarn.lock syntax highlighting",
+            "details": "https://github.com/alexkuz/sublime-yarn-lock",
+            "releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
+        }
+    ],
+    "dependencies": [
+		{
+			"name": "dprint",
+			"load_order": "01",
+			"description": "TypeScript formatting plugin written in Rust",
+			"author": "alexkuz",
+			"issues": "https://github.com/alexkuz/python-rust-dprint/issues",
+			"releases": [
+				{
+					"base": "https://github.com/alexkuz/python-rust-dprint",
+					"tags": true,
+					"sublime_text": "*"
+				}
+			]
+		}
+	]
+}
